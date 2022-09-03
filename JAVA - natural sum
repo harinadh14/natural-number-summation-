@@ -1,0 +1,26 @@
+import java.util.*;
+class naturalsum
+{
+  int summation (int x , int y )
+          {
+           if (x == 1 || x == 0)
+             {
+               return y ;
+             }
+           else
+             {
+               return summation (x-1, x+y);
+             }
+
+          }
+
+
+  public static void main (String args[])
+    {
+     //creating object to above class to call method(summation)
+     naturalsum obj = new natu  //calling method 
+     System.out.println(obj.summation(input,1));
+     //calling method 
+     System.out.println(obj.summation(input,1));
+    }
+}
