@@ -1,0 +1,21 @@
+#include <stdio.h>
+static int  summation (int x , int y )
+  {
+      if (x == 1 )
+      {
+          return y ;
+      }
+       else 
+       {
+           return summation(x-1 , x+y );
+       }
+  }
+    
+int  main()
+{
+    int a = 1;
+    int b ;
+    printf("wnter number to print the sum of natural nummbers : ");
+    scanf ("%d" , &b);
+    return (summation(b,a));
+}
